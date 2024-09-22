@@ -18,4 +18,25 @@
          Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force (if you have any issues)
       4. ./install ps1
 
-      
+## Analysis
+Down the necessary malware from malware bazaar (database for download)
+
+Malware analysis:
+
+Analyzing c59da5938f667c04ca2ba3639b6cb3d55813fc189d4b2f412613b4bfa36ae:
+
+Tools used: Dependency Walker, PE-Studio, X32dbg, Task Manager, procmon
+
+PE Studio analysis:
+
+Import libraries such as ole32.dll, kernel32.dll, user32.dll. Flag showing that there are missing import/export entries indicates that the binary may be obfuscated, using the sleep timer to delay loading for evasion
+
+We see functions such as VirtualAlloc, GetKeyboardType that indicate keylogging, memory allocation, and other injection techniques.
+
+You can see T1055 Process Injection and T1010 Window Discovery, potential attempts for interacting with processes, injecting malicious code. Commonly seen with RATs, password stealers, and keylogging.
+
+We find delphi signatures (used for packing)
+
+Dependency Walker:
+
+Has missing dependencies which may be packed or obfuscated and APIs are resolved dynamically during runtime.
