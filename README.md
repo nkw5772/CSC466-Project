@@ -97,18 +97,34 @@
 
    See LdrInitializeThunk and ntdll.dll used by malware for process injection or thread manipulation.
 
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181538.png)
+
    References to ZwQueryInformationThread, used for threat execution manipulation or analysis environment.
+
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181550.png)
 
    Conditional jumps found in disassembly view, indicatives of unpacking or decrypting payloads on the fly.
 
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181610.png)
+
    Mscoree.dll, ntdll.dll and kernelbase.dll are loaded, interacting deep into the system and components.
+
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181632.png)
 
    ### Dependency Walker:
 
    Unresolved imports, and delay-load dependencies not being found. Often seen in packed or obfuscated malware.
 
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181653.png)
+
    Actual calls appear to be resolved at runtime
 
-   Circular dependency detected are indicators of malware using DLL hihacking
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181701.png)
+
+   Circular dependency detected are indicators of malware using DLL hijacking
+
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181713.png)
 
    Appears to be a packed trojan with process injection. It is packed as seen in dependenc walker.
+
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20181722.png)
