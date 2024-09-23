@@ -52,9 +52,16 @@
    Multiple DLLs being loaded into the process, ntdll.dll is called upon, commonly used to evade higher-level monitoring 
    tools
 
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20173427.png)
+
    Memory map shows potential dynamic allocation of memory to inject or modify code
 
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20173447.png)
+
    A lot shows that it is performing process injection, using ntdll.dll.
+
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20173502.png)
+   
 
    ### Summary:
 
