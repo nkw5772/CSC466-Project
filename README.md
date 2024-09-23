@@ -39,6 +39,8 @@
 
    We find delphi signatures (used for packing)
 
+   ![alt-text](https://github.com/nkw5772/CSC466-Project/blob/main/Screenshot%202024-09-22%20164943.png)
+
    ### Dependency Walker:
 
    Has missing dependencies which may be packed or obfuscated and APIs are resolved dynamically during runtime.
