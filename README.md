@@ -20,7 +20,7 @@
 
       Download the necessary malware from malware bazaar (database for download)
 
-## Analysis
+## First Analysis
 
    Analyzing c59da5938f667c04ca2ba3639b6cb3d55813fc189d4b2f412613b4bfa36ae:
 
@@ -67,6 +67,8 @@
    Reaches system breakpoint (used for anti-debugging)
 
    Shows registry key modifications
+
+## Second Analysis
 
    Malware analysis on 41853d9b1ea1a9fbc492589d25aa6f515ca0ad241ce844af76c55a795873ed9
 
